@@ -9,7 +9,7 @@ const styles = {
   root: {
     width: "50%",
     position: 'fixed',
-    top: '50%',
+    top: '45%',
     left: '25%',
   },
 };
@@ -20,7 +20,7 @@ class SimpleSlider extends React.Component {
     duration: 6,
     interestRate: '',
     amount: 0,
-    numPayments: '',
+    numPayments: 0,
   };
 
   handleChange = (event, value) => {
@@ -69,7 +69,7 @@ class SimpleSlider extends React.Component {
           aria-labelledby="label"
           onChange={this.handleChange}
         />
-        <br /><br /><br />
+        <br /><br />
         <Typography align="center" variant="h6">Loan Duration</Typography>
         <Typography align="center" variant="h3">{this.state.duration} months</Typography>
         <br /><br />
